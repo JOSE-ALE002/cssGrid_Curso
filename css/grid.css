@@ -1,0 +1,13 @@
+/*DISEÑO DE REJILLAS*/
+.contenedor{
+	/*Convertimos el contenedor en una rejilla*/
+	display: grid;
+	/*Especificamos cuantas columnas queremos que tenga la rejilla*/
+	grid-template-columns: 1fr 1fr 1fr;
+
+	/*para jugar con las filas es necesario definir una altura al contenedor*/
+	grid-template-rows: 150px 300px;
+
+	/*Margen estre las celdas*/
+	grid-gap: 20px;
+}

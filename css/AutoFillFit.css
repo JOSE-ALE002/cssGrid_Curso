@@ -1,0 +1,16 @@
+.contenedor{
+	display: grid;
+	grid-gap: 20px;
+
+	/*
+
+	1. Auto-fill: Rellena toda la fila con todas las columnas que quepan dentro
+	y al reducir la pantalla las columnas se baja
+
+	2. Auto-fit: Las columnas existentes abarcan todo el espacio a diferencia de fill que deja espacio oara
+	rellenar en caso que introdujeramos mas elementos div. fit tambien baja los elementos al reducucirse la
+	mucho la resolucion o a resolucion de dispositivos moviles.
+
+	*/
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}

@@ -1,0 +1,15 @@
+.contenedor{
+	display: grid;
+	height: 700px;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 150px);
+	grid-template-rows: repeat(3, 150px);
+
+	/*Alinea Horizontalmente el contenido
+	/center/start/end/space-around/space-between/space-evenly*/
+	justify-content: space-around;
+
+	/*Verticalmente el contenido
+	/center/start/end/space-around/space-between/space-evenly*/
+	align-content: center;
+}

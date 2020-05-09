@@ -1,0 +1,43 @@
+.contenedor{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header header header"
+						 "sidebar-1 main sidebar-2"
+						 "sidebar-1 widgets sidebar-2"
+						 "footer footer footer";
+}
+
+.contenedor .header{
+	background: #ff8000;
+	grid-column: header;
+}
+
+.contenedor .sidebar-1{
+	background: #836767;
+	/*grid-row: sidebar-1;
+	
+	FORMA ALTERNTIVA Y RAPIDA*/
+	grid-area: sidebar-1;
+}
+
+.contenedor .main{
+	background: white;
+	color: navy;
+	grid-area: main;
+}
+
+.contenedor .widgets{
+	background: #ff8000;
+	grid-area: widgets;
+}
+
+.contenedor .footer{
+	grid-area: footer;
+}
+.contenedor .sidebar-2{
+	background: #836767;
+	grid-area: sidebar-2;
+}
+
